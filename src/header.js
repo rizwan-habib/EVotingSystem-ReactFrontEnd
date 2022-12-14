@@ -22,7 +22,7 @@ function Header() {
                         <a href='#myfooter' class="btn btn-light btn-lg action-button" type="button ">Learn More</a>
                     </div>
                     <div class="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block phone-holder">
-                        <div class="phone-mockup"><img class="device" src={screenContent} alt="image"/>
+                        <div class="phone-mockup"><img class="device" src={screenContent} alt=""/>
                             <div class="screen"></div>
                         </div>
                     </div>

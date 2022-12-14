@@ -1,11 +1,11 @@
 import Nav from "./Navbar"
 import './css/Registration-Form-with-Photo.css'
-import { useHistory } from "react-router";
+// import { useHistory } from "react-router";
 import { useState } from "react";
-import axios from "axios";
+// import axios from "axios";
 
 function RegisterVoter() {
-  const history = useHistory();
+  // const history = useHistory();
 
   const [Name, setName] = useState("");
   const [userName, setUserName] = useState("");
@@ -14,17 +14,14 @@ function RegisterVoter() {
 
   function updateName(e) {
     setName(e.target.value);
-    // console.log(Name);
   }
 
   function updateUserName(e) {
     setUserName(e.target.value);
-    // console.log(userName);
   }
 
   function updatePassword(e) {
     setPassword(e.target.value);
-    // console.log(password);
   }
   function updateCNIC(e) {
     setCNIC(e.target.value);
@@ -34,36 +31,36 @@ function RegisterVoter() {
   function handleSubmit(e) {
     e.preventDefault();
 
-    const user = {
-      "name": Name,
-      "username": userName,
-      "password": password,
-      "cnic": cnic
-    };
+    // const user = {
+    //   "name": Name,
+    //   "username": userName,
+    //   "password": password,
+    //   "cnic": cnic
+    // };
 
-    let result = false;
+    // let result = false;
 
-    axios.post(`http://localhost:8001/setUpProfile`, user)
-      .then(res => {
-        console.log(res);
-        result = res.data;
-        if (result == "success") {
-          history.push('/login');
-        }
-        else {
-          alert("user already exist");
-          console.log("error");
-        }
-
-
+    // axios.post(`http://localhost:8001/setUpProfile`, user)
+    //   .then(res => {
+    //     console.log(res);
+    //     result = res.data;
+        // if (result == "success") {
+        //   history.push('/login');
+        // }
+        // else {
+        //   alert("user already exist");
+        //   console.log("error");
+        // }
 
 
-      }
-      )
-      .catch(err => {
-        // Do something for an error here
-        console.log("Error Reading data " + err);
-      });
+
+
+      // }
+      // )
+      // .catch(err => {
+      //   // Do something for an error here
+      //   console.log("Error Reading data " + err);
+      // });
 
 
   }

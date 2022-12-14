@@ -17,17 +17,17 @@ function Footer(props) {
                     <div class="col-sm-6 col-md-3 item">
                         <h3>Services</h3>
                         <ul>
-                            <li><a href="#">Web design</a></li>
-                            <li><a href="#">Development</a></li>
-                            <li><a href="#">Hosting</a></li>
+                            <li><a href="#s">Web design</a></li>
+                            <li><a href="#s">Development</a></li>
+                            <li><a href="#s">Hosting</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-3 item">
                         <h3>About</h3>
                         <ul>
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Careers</a></li>
+                            <li><a href="#s">Company</a></li>
+                            <li><a href="#s">Team</a></li>
+                            <li><a href="#s">Careers</a></li>
                         </ul>
                     </div>
                     

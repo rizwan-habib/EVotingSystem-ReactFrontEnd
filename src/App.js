@@ -1,16 +1,8 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import WelcomePage from './welcome';
-import LoginPage from './login';
-import SetupProfilePage from './registerVoter';
-import RegisterHostelPage from './registerCandidate';
-import SearchAndResultPage from "./searchAndResults";
-import RoomsAndBeds from './roomsAndBeds';
-import UpdateRooms from './updateRooms';
-import AddRoomDetails from './AddRoomDetails';
-import DelHostel from './deleteHostel';
-import HostelMain from './hostelMain';
-import RequestMessages from './requestMessages';
-
+import CastVote from './castVote';
+import RegisterVoter from './registerVoter';
+import RegisterCandidate from './registerCandidate';
 
 function App() {
 
@@ -20,36 +12,15 @@ function App() {
     <div>
       <Router>
         <Switch>
-          <Route path="/login">
-            <LoginPage/>
+          <Route path="/castVote">
+            <CastVote/>
           </Route>
           <Route path="/registerVoter">
-            <SetupProfilePage/>
+            <RegisterVoter/>
           </Route>
           <Route path="/registerCandidate">
-            <RegisterHostelPage/>
+            <RegisterCandidate/>
           </Route>
-          <Route path="/SearchAndResults">
-            <SearchAndResultPage/>
-          </Route> 
-          <Route path="/roomsAndBeds">
-            <RoomsAndBeds/>
-          </Route>
-          <Route path= "/updateRooms">
-            <UpdateRooms/>
-          </Route> 
-          <Route path= "/AddRoomDetails">
-            <AddRoomDetails/>
-          </Route>
-          <Route path= "/deleteHostel">
-            <DelHostel/>
-          </Route>
-          <Route path= "/requestMessages">
-            <RequestMessages/>
-          </Route>
-          <Route path= "/hostelMain">
-            <HostelMain/>
-          </Route>  
           <Route path="/">
             <WelcomePage/>
           </Route> 

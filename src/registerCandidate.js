@@ -1,11 +1,11 @@
 import Nav from "./Navbar"
 import './css/Registration-Form-with-Photo.css'
-import { useHistory } from "react-router";
+// import { useHistory } from "react-router";
 import { useState } from "react";
-import axios from "axios";
+// import axios from "axios";
 
 function RegisterCandidate() {
-  const history = useHistory();
+  // const history = useHistory();
 
   const [candidateName, setCandidateName] = useState("");
   const [cnic, setCnic] = useState("");
@@ -40,38 +40,38 @@ function RegisterCandidate() {
   function handleSubmit(e) {
     e.preventDefault();
 
-    const user = {
-      "candidateName": candidateName,
-      "cnic": cnic,
-      "password": password,
-      "address": address,
-      "politicalParty": politicalParty
-    };
+    // const user = {
+    //   "candidateName": candidateName,
+    //   "cnic": cnic,
+    //   "password": password,
+    //   "address": address,
+    //   "politicalParty": politicalParty
+    // };
 
-    let result = false;
+    // let result = false;
 
-    axios.post(`http://localhost:8001/enterHostelDetails`, user)
-      .then(res => {
-        console.log(res);
-        //data message now in result
-        result = res.data;
-        if (result == "success") {
-          history.push("/login");
-        }
-        else if (result == "address_false") {
-          alert("Adress Already Exist")
-          console.log("error");
-        }
-        else if (result == "login_false") {
-          alert("Username Already Exist")
-          console.log("error");
-        }
-      }
-      )
-      .catch(err => {
-        // Do something for an error here
-        console.log("Error Reading data " + err);
-      });
+    // axios.post(`http://localhost:8001/enterHostelDetails`, user)
+    //   .then(res => {
+    //     console.log(res);
+    //     //data message now in result
+    //     result = res.data;
+    //     if (result == "success") {
+    //       history.push("/login");
+    //     }
+    //     else if (result == "address_false") {
+    //       alert("Adress Already Exist")
+    //       console.log("error");
+    //     }
+    //     else if (result == "login_false") {
+    //       alert("Username Already Exist")
+    //       console.log("error");
+    //     }
+    //   }
+    //   )
+    //   .catch(err => {
+    //     // Do something for an error here
+    //     console.log("Error Reading data " + err);
+    //   });
 
 
 
