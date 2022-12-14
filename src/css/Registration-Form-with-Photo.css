@@ -6,7 +6,7 @@
 .register-photo .image-holder {
   display: table-cell;
   width: auto;
-  background: url(/src/img/setupProfile.jpg);
+  background: url(/src/img/evote.jpeg);
   background-size: cover;
 }
 

@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import WelcomePage from './welcome';
 import LoginPage from './login';
-import SetupProfilePage from './setupProfile';
-import RegisterHostelPage from './registerHostel';
+import SetupProfilePage from './registerVoter';
+import RegisterHostelPage from './registerCandidate';
 import SearchAndResultPage from "./searchAndResults";
 import RoomsAndBeds from './roomsAndBeds';
 import UpdateRooms from './updateRooms';
@@ -23,10 +23,10 @@ function App() {
           <Route path="/login">
             <LoginPage/>
           </Route>
-          <Route path="/setupProfile">
+          <Route path="/registerVoter">
             <SetupProfilePage/>
           </Route>
-          <Route path="/registerHostel">
+          <Route path="/registerCandidate">
             <RegisterHostelPage/>
           </Route>
           <Route path="/SearchAndResults">

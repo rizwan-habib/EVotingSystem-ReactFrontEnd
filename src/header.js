@@ -6,7 +6,7 @@ import './fonts/fontawesome-webfont.ttf'
 import './fonts/fontawesome-webfont.woff'
 import './fonts/fontawesome-webfont.woff2'
 import './fonts/FontAwesome.otf'
-import screenContent from './img/hostel.jpg'
+import screenContent from './img/e-voting.jpg'
 function Header() {
     return (
         // <header class="header-blue">
@@ -16,8 +16,7 @@ function Header() {
                     
                         <h1>Welcome Back!</h1>
                         <p> 
-                            Our Hostel management system is designed to suggest the best hostels in town
-                            to its users based on their ratings and customer's experience.    
+                            Our E-Voting system is designed to vote the candidates using smart contracts.    
                         </p>
                         
                         <a href='#myfooter' class="btn btn-light btn-lg action-button" type="button ">Learn More</a>

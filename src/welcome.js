@@ -3,7 +3,6 @@ import Carousel from "./Carousel"
 import Header from "./header";
 import './img/hostel.jpg'
 import Footer from "./Footer";
-import Features from "./features";
 
 function WelcomePage() {
   return (
@@ -12,7 +11,6 @@ function WelcomePage() {
         <Nav/>
         <Header/>
       </header>
-      <Features/>
       <Footer/>
     </div>
   );
