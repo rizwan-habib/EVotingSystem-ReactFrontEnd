@@ -6,7 +6,7 @@ function Nav() {
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active" href="/castVote">Cast Vote</a></li>
                     <li class="nav-item"><a class="nav-link active" href="/registerVoter">Register Voter</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="/registerCandidate">Register Candidate</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/registerCandidate">Get Winner</a></li>
                 </ul>
             </div>
         </div>
